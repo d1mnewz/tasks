@@ -4,27 +4,29 @@ using NUnit.Framework;
 
 namespace FirstOne.Tests
 {
+    [TestFixture]
     public class PairFinderShould
     {
-        [Test]
-        public void FindPairs()
+        [TestCase(new[] { 1, 3, 4, 5 }, 8, 1, 3)]
+        [TestCase(new[] { 1, 2, 4, 6 }, 8, 1, 3)]
+        [TestCase(new[] { -2, 6, 10, 11 }, 8, 0, 2)]
+        public void FindPairs(int[] arr, int sum, int expectedFirstElement, int expectedSecondElement)
         {
-            var arr = new[] { 1, 3, 4, 4 };
-            var sum = 8;
             var sut = new PairFinder();
 
             var result = sut.FindPair(arr, sum);
 
             result.Should().NotBeNull();
-            result.FirstElementIndex.Should().Be(2);
-            result.SecondElementIndex.Should().Be(3);
+            result.FirstElementIndex.Should().Be(expectedFirstElement);
+            result.SecondElementIndex.Should().Be(expectedSecondElement);
         }
 
-        [Test]
-        public void NotFindPairs()
+        [TestCase(new[] { 1, 3, 4, 9 }, 8)]
+        [TestCase(new[] { 1, 2, 4, 5 }, 8)]
+        [TestCase(new[] { 0, 6, 10, 11 }, 8)]
+        [TestCase(new int[0], 8)]
+        public void NotFindPairs(int[] arr, int sum)
         {
-            var arr = new[] { 1, 3, 4, 9 };
-            var sum = 8;
             var sut = new PairFinder();
 
             var result = sut.FindPair(arr, sum);
