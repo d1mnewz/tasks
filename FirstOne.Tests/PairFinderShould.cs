@@ -4,6 +4,10 @@ using NUnit.Framework;
 
 namespace FirstOne.Tests
 {
+    // Given an array of sorted integers. Find a pair of elements which gives sum of N.
+    // [1, 3, 4, 5] where N = 8 - Yes
+    // [1, 3, 4, 9] where N = 8 - No
+    
     [TestFixture]
     public class PairFinderShould
     {
