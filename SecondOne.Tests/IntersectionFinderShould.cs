@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
@@ -20,16 +19,8 @@ namespace SecondOne.Tests
 
             var result = sut.FindIntersection(arr1, arr2, arr3);
             result.Should().NotBeNull();
-            result.Count().Should().Be(intersection.Length);
-            result.Should().AllBeEquivalentTo(intersection);
-        }
-    }
-
-    public class IntersectionFinder
-    {
-        public IEnumerable<int> FindIntersection(int[] arr1, int[] arr2, int[] arr3)
-        {
-            return null;
+            result.Should().HaveSameCount(intersection);
+            result.SequenceEqual(intersection).Should().BeTrue();
         }
     }
 }
