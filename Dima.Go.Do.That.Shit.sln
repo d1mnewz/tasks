@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstOne", "FirstOne\FirstOne.csproj", "{B5449E0C-D9AE-4282-989C-18540B96A5CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstOne.Impl", "FirstOne\FirstOne.Impl\FirstOne.Impl.csproj", "{B5449E0C-D9AE-4282-989C-18540B96A5CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstOne.Tests", "FirstOne.Tests\FirstOne.Tests.csproj", "{B8CB1D76-A3EE-41D9-A4AD-34276FB1B6BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstOne.Tests", "FirstOne\FirstOne.Tests\FirstOne.Tests.csproj", "{B8CB1D76-A3EE-41D9-A4AD-34276FB1B6BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondOne.Tests", "SecondOne.Tests\SecondOne.Tests.csproj", "{E97DABDD-DA19-4BD0-83F1-D2C4AAF5DE39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondOne.Tests", "SecondOne\SecondOne.Tests\SecondOne.Tests.csproj", "{E97DABDD-DA19-4BD0-83F1-D2C4AAF5DE39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondOne", "SecondOne\SecondOne.csproj", "{6026B3CC-6E5D-4946-835E-E06E4890B812}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondOne", "SecondOne\SecondOne.Impl\SecondOne.Impl.csproj", "{6026B3CC-6E5D-4946-835E-E06E4890B812}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FirstOne", "FirstOne", "{865E865C-C4AE-466C-8A09-1DC2A791ADD0}"
 EndProject

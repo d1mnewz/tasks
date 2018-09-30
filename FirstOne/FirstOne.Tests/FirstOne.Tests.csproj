@@ -16,7 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FirstOne\FirstOne.csproj" />
+      <ProjectReference Include="..\FirstOne.Impl\FirstOne.Impl.csproj" />
     </ItemGroup>
 
 </Project>
