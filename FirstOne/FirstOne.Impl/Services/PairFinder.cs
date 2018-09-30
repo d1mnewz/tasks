@@ -1,6 +1,6 @@
-using FirstOne.Models;
+using FirstOne.Impl.Models;
 
-namespace FirstOne.Services
+namespace FirstOne.Impl.Services
 {
     public class PairFinder
     {

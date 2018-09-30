@@ -1,4 +1,4 @@
-namespace FirstOne.Models
+namespace FirstOne.Impl.Models
 {
     public class PairModel
     {

@@ -1,6 +1,7 @@
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
+using SecondOne.Impl;
 
 namespace SecondOne.Tests
 {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SecondOne
+namespace SecondOne.Impl
 {
     public class IntersectionFinder
     {
