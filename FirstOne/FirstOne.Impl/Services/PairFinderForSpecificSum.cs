@@ -2,7 +2,7 @@ using FirstOne.Impl.Models;
 
 namespace FirstOne.Impl.Services
 {
-    public class PairFinder
+    public class PairFinderForSpecificSum
     {
         public PairModel FindPair(int[] arr, int sum)
         {

@@ -7,16 +7,16 @@ namespace FirstOne.Tests
     // Given an array of sorted integers. Find a pair of elements which gives sum of N.
     // [1, 3, 4, 5] where N = 8 - Yes
     // [1, 3, 4, 9] where N = 8 - No
-    
+
     [TestFixture]
-    public class PairFinderShould
+    public class PairFinderForSpecificSumShould
     {
         [TestCase(new[] { 1, 3, 4, 5 }, 8, 1, 3)]
         [TestCase(new[] { 1, 2, 4, 6 }, 8, 1, 3)]
         [TestCase(new[] { -2, 6, 10, 11 }, 8, 0, 2)]
         public void FindPairs(int[] arr, int sum, int expectedFirstElement, int expectedSecondElement)
         {
-            var sut = new PairFinder();
+            var sut = new PairFinderForSpecificSum();
 
             var result = sut.FindPair(arr, sum);
 
@@ -31,7 +31,7 @@ namespace FirstOne.Tests
         [TestCase(new int[0], 8)]
         public void NotFindPairs(int[] arr, int sum)
         {
-            var sut = new PairFinder();
+            var sut = new PairFinderForSpecificSum();
 
             var result = sut.FindPair(arr, sum);
 
