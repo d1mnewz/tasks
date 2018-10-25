@@ -10,17 +10,11 @@
         <PackageReference Include="FluentAssertions" Version="5.4.2" />
         <PackageReference Include="nunit" Version="3.10.1" />
         <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ThirdOne.Impl\ThirdOne.Impl.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Reference Include="FluentAssertions, Version=5.4.2.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a">
-        <HintPath>..\..\..\..\.nuget\packages\fluentassertions\5.4.2\lib\netcoreapp2.0\FluentAssertions.dll</HintPath>
-      </Reference>
+      <ProjectReference Include="..\FourthOne.Impl\FourthOne.Impl.csproj" />
     </ItemGroup>
 
 </Project>

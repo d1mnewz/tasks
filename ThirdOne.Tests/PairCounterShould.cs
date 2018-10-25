@@ -9,6 +9,7 @@ namespace ThirdOne.Tests
     {
         [TestCase(new[] { 10, 20, 20, 10, 10, 30, 50, 10, 20 }, 3)]
         [TestCase(new[] { 1, 2, 2, 3, 4, 1, 2, 3, 4 }, 4)]
+        [TestCase(new[] { 1, 1, 3, 1, 2, 1, 3, 3, 3, 3 }, 4)]
         public void CountPairs(int[] arr, int expectedResult)
         {
             var sut = new PairCounter();
